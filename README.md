@@ -32,6 +32,7 @@
 - Toy Projects (5개)
 - Portfolio Site
 - Cafe Ledger App (진행 중)
+- fcsquadmeter (v1 배포 완료) : fcsquadmeter.vercel.app
 
 ---
 
