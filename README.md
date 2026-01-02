@@ -8,7 +8,7 @@
 
 ### 🔥 What I'm Working On
 
-- 🧾 **Cafe Ledger App (메인 포트폴리오 프로젝트)**  
+- 🧾 **Cafe Ledger App**  
   소규모 카페 운영을 위한 **예치금/미수금 관리 웹앱**
 
 - 💻 **Portfolio Website**
