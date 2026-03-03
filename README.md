@@ -42,7 +42,7 @@ A production PWA used in a real café.
 
 ---
 
-## ✍️ Writing (설계 회고 기록)
+## ✍️ Writing (회고 기록: Retrospective)
 
 Cafe Ledger를 개발하면서 겪은  
 운영 이슈, RLS 정책 충돌, 예외처리 설계 등을 정리하고 있습니다.
@@ -51,13 +51,6 @@ About architecture decisions and real-world constraints.
 
 🔗 Series:  
 https://velog.io/@creyon0215/series/CafeLedger
-
-주요 내용:
-- 외부 공휴일 데이터 분리 관리
-- Supabase RLS 정책 설계 및 충돌 해결
-- 멀티 매장(shop) 구조 설계
-- 취소/수정/미수 처리 등 예외 케이스 모델링
-- 고연령 사용자 UX 설계
 
 ---
 
