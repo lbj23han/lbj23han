@@ -68,17 +68,17 @@ A deployed web app built on NEXON Open API.
 
 ---
 
-## 🚀 Portfolio (배포 예정)
+## 🚀 Portfolio
 
-현재 포트폴리오 사이트를 정리 중입니다.
+현재 작업 및 프로젝트를 정리한 포트폴리오입니다.
 
-Will include:
+include:
 - Cafe Ledger 아키텍처 상세 분석
 - AI 입력 파이프라인 설계 과정
 - 권한 모델 및 RLS 구조
 - 실제 운영 기반 문제 해결 사례
 
-🔗 Coming Soon
+🔗 https://han-portfolio-six.vercel.app/
 
 ---
 
