@@ -1,6 +1,6 @@
 # 👋 Hello, i am Han(이중한)
 
-실사용 환경에서 발생하는 문제를 **운영 가능한 웹앱으로 해결하는 프론트엔드 개발자**입니다.
+실제 환경에서 발생하는 문제를 **운영 가능한 웹앱으로 해결하는 프론트엔드 개발자**입니다.
 
 I build web applications that solve real operational problems.
 
@@ -35,7 +35,7 @@ A production PWA used in a real café.
 - 🤖 AI Helper (진행 중)  
   자연어 입력 → 미리보기 → 확인 → 안전하게 반영
 
-특히, **실사용자인 어머니가 헷갈리지 않도록**  
+특히, **사용자인 어머니가 헷갈리지 않도록**  
 입력 단계를 단순화하고, 실수 방지 구조에 집중했습니다.
 
 🔗 Live: https://nescafe-admin-pwa.vercel.app/
