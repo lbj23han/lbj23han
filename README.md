@@ -1,11 +1,11 @@
 # 👋 Hello, i am Han(이중한)
 
-실제 환경에서 발생하는 문제를 **운영 가능한 웹앱으로 해결하는 프론트엔드 개발자**입니다.
+실제 운영 환경에서 발생하는 문제를 **웹 애플리케이션으로 해결하는 프론트엔드 개발자**입니다.
 
-I build web applications that solve real operational problems.
+I build production-ready web applications that solve real operational problems.
 
 Next.js · React · TypeScript 기반으로  
-**모바일 퍼스트 UX**, **인증/권한 설계**, **데이터 흐름 구조화**를 강점으로 합니다.
+**모바일 퍼스트 UX, 인증/권한 설계, 데이터 흐름 구조화, LLM 기반 입력 파이프라인 설계**를 강점으로 합니다.
 
 I focus on:
 - Mobile-first UX
@@ -32,8 +32,10 @@ A production PWA used in a real café.
 - 👥 직원 초대 및 역할 기반 접근 제어 (Supabase RLS)
 - 📊 예약 → 장부 자동 반영
 - 🧾 부서(거래처) 단위 정산 구조 + 히스토리 관리
-- 🤖 AI Helper (진행 중)  
-  자연어 입력 → 미리보기 → 확인 → 안전하게 반영
+- 🤖 AI Helper (LLM 기반)
+자연어 입력 → 예약 의도 파싱 → 미리보기 → 확인 → 안전하게 반영  
+(OpenAI API 기반 입력 파이프라인)
+- 🗄 Supabase(PostgreSQL) 기반 백엔드 구조 및 RLS 정책 직접 설계
 
 특히, **사용자인 어머니가 헷갈리지 않도록**  
 입력 단계를 단순화하고, 실수 방지 구조에 집중했습니다.
@@ -108,10 +110,12 @@ My Ownership:
 - TypeScript
 
 ### Supporting
-- Supabase (Auth + RLS)
+- Supabase (PostgreSQL / Auth / RLS)
 - React Query
 - Zustand
 - Tailwind CSS
+- OpenAI API (LLM)
+- PWA
 - Vercel
 
 ---
