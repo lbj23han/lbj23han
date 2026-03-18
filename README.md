@@ -53,8 +53,53 @@ About architecture decisions and real-world constraints.
 
 🔗 Series:  
 https://velog.io/@creyon0215/series/CafeLedger
+  ---
 
----
+  ## 🥗 나만의 영양코치 — AI
+  Nutrition Coach (Cross-Platform)
+
+  GPT-4o Vision + Supabase Edge
+  Functions 기반의 AI 영양 관리
+  앱입니다.
+  iOS / Android / Web(PWA) 단일
+  코드베이스로 동시 지원합니다.
+
+  A cross-platform AI nutrition
+  tracking app — iOS, Android, and
+  Web from one codebase.
+
+  #### 핵심 설계 포인트
+
+  - 📸 AI 음식 인식 — 사진 촬영 시
+  GPT-4o Vision이
+  음식·중량·칼로리·매크로 자동 분석
+  - ✍️  텍스트 AI 로깅 — 자연어 입력
+  → GPT-4o-mini가 구조화된 영양
+  데이터로 파싱
+  - 🧮 개인 목표 계산 엔진 —
+  BMR(Mifflin-St Jeor /
+  Katch-McArdle) · TDEE · 목표별
+  매크로 자동 설정
+  - 🤖 AI 영양 코치 채팅 — 오늘 식단
+   + 프로필을 컨텍스트로 주입한
+  개인화 코칭
+  - 📊 주간 통계 & 12주 체중 예측
+  모델
+  - 🔐 보안 설계 — OpenAI 키를 Edge
+  Function 서버 시크릿으로 격리,
+  클라이언트 미노출
+    사용자당 AI 호출 10회 제한
+  (`api_usage` 테이블 + HTTP 429)
+  - 🌐 플랫폼 분기 번들링 —
+  `FoodCamera.native.tsx` /
+  `FoodCamera.tsx` 분리로
+    `expo-camera`를 웹 번들에서
+  완전히 제외
+
+  🔗 Live (DEMO):
+  [https://nutrition-coach-han.vercel.app/)
+
+  ---
 
 ## ⚽ FcSquadMeter — Deployed
 
