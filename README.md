@@ -1,6 +1,6 @@
 # 👋 Hello, i am Han(이중한)
 
-실제 운영 환경에서 발생하는 문제를 **웹 애플리케이션으로 해결하는 프론트엔드 개발자**입니다.
+실제 운영 환경에서 발생하는 문제를 **웹 애플리케이션으로 해결하는 개발자**입니다.
 
 I build production-ready web applications that solve real operational problems.
 
