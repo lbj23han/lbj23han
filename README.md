@@ -54,6 +54,8 @@ About architecture decisions and real-world constraints.
 🔗 Series:  
 https://velog.io/@creyon0215/series/CafeLedger
 
+---
+
 ## 🏛 Public Policy Finder — Personalization (In Progress)
 
 사용자의 조건에 맞는 정부 지원 정책을 **탐색·필터링·우선순위화**하여  
@@ -64,7 +66,7 @@ benefits they are eligible for but may be missing.
 
 ---
 
-### 🎯 Problem
+#### 🎯 Problem
 
 - 정부 정책 정보가 여러 곳에 흩어져 있어 접근성이 낮음
 - 정책마다 조건이 복잡해 실제 신청 가능 여부 판단이 어려움
@@ -72,7 +74,7 @@ benefits they are eligible for but may be missing.
 
 ---
 
-### 💡 Solution
+#### 💡 Solution
 
 - 👤 **개인화 입력 기반 필터링**
   - 나이 / 성별 /지역 / 소득 / 가구 형태 기반 정책 필터링
@@ -95,7 +97,7 @@ benefits they are eligible for but may be missing.
 
 ---
 
-### 🏗 Design
+#### 🏗 Design
 
 - 로그인 없이 사용 가능한 lightweight 구조
 - 로컬스토리지 기반 사용자 상태 관리
@@ -104,12 +106,14 @@ benefits they are eligible for but may be missing.
 
 ---
 
-### 🚀 Direction
+#### 🚀 Direction
 
 단순 정책 정보 제공이 아니라  
-👉 **“받을 수 있는데 놓치고 있는 혜택을 찾아주는 탐색 엔진”**
+👉 **“받을 수 있는데 놓치고 있는 혜택을 찾아주는 탐색 엔진”** 을 목표로 합니다.
 
-을 목표로 합니다.
+🔗 Live:  
+https://findmymoney.vercel.app/
+
 ---
 
 ## 🥗 나만의 영양코치 — AI
