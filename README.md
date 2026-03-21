@@ -53,53 +53,87 @@ About architecture decisions and real-world constraints.
 
 🔗 Series:  
 https://velog.io/@creyon0215/series/CafeLedger
-  ---
 
-  ## 🥗 나만의 영양코치 — AI
-  Nutrition Coach (Cross-Platform)
+## 🏛 Public Policy Finder — Personalization (In Progress)
 
-  GPT-4o Vision + Supabase Edge
-  Functions 기반의 AI 영양 관리
-  앱입니다.
-  iOS / Android / Web(PWA) 단일
-  코드베이스로 동시 지원합니다.
+사용자의 조건에 맞는 정부 지원 정책을 **탐색·필터링·우선순위화**하여  
+“받을 수 있는데 놓치고 있는 혜택”을 발견하도록 돕는 웹 애플리케이션입니다.
 
-  A cross-platform AI nutrition
-  tracking app — iOS, Android, and
-  Web from one codebase.
+A personalized public policy discovery app that helps users identify  
+benefits they are eligible for but may be missing.
 
-  #### 핵심 설계 포인트
+---
 
-  - 📸 AI 음식 인식 — 사진 촬영 시
-  GPT-4o Vision이
-  음식·중량·칼로리·매크로 자동 분석
-  - ✍️  텍스트 AI 로깅 — 자연어 입력
-  → GPT-4o-mini가 구조화된 영양
-  데이터로 파싱
-  - 🧮 개인 목표 계산 엔진 —
-  BMR(Mifflin-St Jeor /
-  Katch-McArdle) · TDEE · 목표별
-  매크로 자동 설정
-  - 🤖 AI 영양 코치 채팅 — 오늘 식단
-   + 프로필을 컨텍스트로 주입한
-  개인화 코칭
-  - 📊 주간 통계 & 12주 체중 예측
-  모델
-  - 🔐 보안 설계 — OpenAI 키를 Edge
-  Function 서버 시크릿으로 격리,
-  클라이언트 미노출
-    사용자당 AI 호출 10회 제한
-  (`api_usage` 테이블 + HTTP 429)
-  - 🌐 플랫폼 분기 번들링 —
-  `FoodCamera.native.tsx` /
-  `FoodCamera.tsx` 분리로
-    `expo-camera`를 웹 번들에서
-  완전히 제외
+### 🎯 Problem
 
-  🔗 Live (DEMO):
-  [https://nutrition-coach-han.vercel.app/)
+- 정부 정책 정보가 여러 곳에 흩어져 있어 접근성이 낮음
+- 정책마다 조건이 복잡해 실제 신청 가능 여부 판단이 어려움
+- 단순 리스트 형태 제공으로 사용자에게 의미 있는 선택이 어려움
 
-  ---
+---
+
+### 💡 Solution
+
+- 👤 **개인화 입력 기반 필터링**
+  - 나이 / 성별 /지역 / 소득 / 가구 형태 기반 정책 필터링
+
+- 📊 **정책 우선순위 정렬 로직**
+  - 단순 금액 기준이 아닌  
+  - **신청 가능성 × 혜택 크기 기반 스코어링**
+
+- ⚖️ **현실 반영 추천 로직**
+  - 조건이 까다로운 정책 → 우선순위 낮춤
+  - 신청 난이도 및 접근성 고려
+
+- 🧠 **확장 가능한 구조**
+  - 공공 API 기반 정책 데이터 연동
+  - 향후 AI 기반 eligibility 판단 및 추천 고도화
+
+- 🧾 **가구 유형 모델링**
+  - 1인 가구 / 다인가구
+  - 캥거루족 등 현실적인 생활 구조 반영
+
+---
+
+### 🏗 Design
+
+- 로그인 없이 사용 가능한 lightweight 구조
+- 로컬스토리지 기반 사용자 상태 관리
+- 모바일 퍼스트 UX + 카드형 추천 UI
+- 추천 이유를 설명할 수 있는 구조 (Explainable Recommendation)
+
+---
+
+### 🚀 Direction
+
+단순 정책 정보 제공이 아니라  
+👉 **“받을 수 있는데 놓치고 있는 혜택을 찾아주는 탐색 엔진”**
+
+을 목표로 합니다.
+---
+
+## 🥗 나만의 영양코치 — AI
+Nutrition Coach (Cross-Platform)
+
+GPT-4o Vision + Supabase Edge Functions 기반의 AI 영양 관리 앱입니다.
+iOS / Android / Web(PWA) 단일 코드베이스로 동시 지원합니다.
+
+A cross-platform AI nutrition tracking app — iOS, Android, and Web from one codebase.
+
+#### 핵심 설계 포인트
+
+- 📸 AI 음식 인식 — 사진 촬영 시 GPT-4o Vision이 음식·중량·칼로리·매크로 자동 분석
+- ✍️  텍스트 AI 로깅 — 자연어 입력 → GPT-4o-mini가 구조화된 영양 데이터로 파싱
+- 🧮 개인 목표 계산 엔진 — BMR(Mifflin-St Jeor / Katch-McArdle) · TDEE · 목표별 매크로 자동 설정
+- 🤖 AI 영양 코치 채팅 — 오늘 식단 + 프로필을 컨텍스트로 주입한 개인화 코칭
+- 📊 주간 통계 & 12주 체중 예측 모델
+- 🔐 보안 설계 — OpenAI 키를 Edge Function 서버 시크릿으로 격리, 클라이언트 미노출 사용자당 AI 호출 10회 제한 (`api_usage` 테이블 + HTTP 429)
+- 🌐 플랫폼 분기 번들링 — `FoodCamera.native.tsx` / `FoodCamera.tsx` 분리로 `expo-camera`를 웹 번들에서 완전히 제외
+
+🔗 Live (DEMO):
+[https://nutrition-coach-han.vercel.app/)
+
+---
 
 ## ⚽ FcSquadMeter — Deployed
 
