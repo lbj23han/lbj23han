@@ -20,7 +20,7 @@ I focus on:
 
 ## 🔥 Main Project
 
-### ☕ Cafe Ledger (PWA) — 실제 사용 중인 내부 운영 툴
+### ☕ Cafe Ledger (PWA) — 실제 매장 운영 환경에서 사용 중인 내부 운영 툴
 
 가족이 운영하는 카페에서 **실제로 사용 중인** 예치금/미수금/예약 관리 PWA입니다.
 
