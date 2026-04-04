@@ -5,7 +5,7 @@
 I build production-ready web applications that solve real operational problems.
 
 Next.js · React · TypeScript 기반으로  
-**모바일 퍼스트 UX, 인증/권한 설계, 데이터 흐름 구조화, LLM 기반 입력 파이프라인 설계**를 강점으로 합니다.
+**모바일 퍼스트 UX, 인증/권한 설계, 데이터 흐름 구조화, LLM 기반 입력 파이프라인 설계, 기획**을 강점으로 합니다.
 
 I focus on:
 - Mobile-first UX
@@ -14,7 +14,7 @@ I focus on:
 - Preventing user mistakes through preview & validation
 
 > “기능을 만드는 개발자”가 아니라  
-> “운영이 가능한 구조를 설계하는 개발자”를 지향합니다.
+> “실제 환경에서 운영이 가능한 구조를 설계하는 개발자”를 지향합니다.
 
 ---
 
