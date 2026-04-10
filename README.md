@@ -1,214 +1,154 @@
-# 👋 Hello, i am Han(이중한)
+<h1 align="center">Han's GitHub</h1>
 
-실제 운영 환경에서 발생하는 문제를 **웹 애플리케이션으로 해결하는 개발자**입니다.
+<p align="center">
+  실제 운영 문제를 웹 애플리케이션으로 해결하는 사람
+</p>
 
-I build production-ready web applications that solve real operational problems.
+<p align="center">
+  I build production-ready web applications with a focus on<br/>
+  mobile-first UX, structured data flow, auth/RLS, and LLM-powered input pipelines.
+</p>
 
-Next.js · React · TypeScript 기반으로  
-**모바일 퍼스트 UX, 인증/권한 설계, 데이터 흐름 구조화, LLM 기반 입력 파이프라인 설계, 기획**을 강점으로 합니다.
-
-I focus on:
-- Mobile-first UX
-- Authentication & role-based access
-- Clear data flow design
-- Preventing user mistakes through preview & validation
-
-> “기능을 만드는 개발자”가 아니라  
-> “실제 환경에서 운영이 가능한 구조를 설계하는 개발자”를 지향합니다.
-
----
-
-## 🔥 Main Project
-
-### ☕ Cafe Ledger (PWA) — 실제 매장 운영 환경에서 사용 중인 내부 운영 툴
-
-가족이 운영하는 카페에서 **실제로 사용 중인** 예치금/미수금/예약 관리 PWA입니다.
-
-A production PWA used in a real café.
-
-#### 핵심 설계 포인트
-
-- 📱 모바일 퍼스트 UX (스마트폰 기준 설계)
-- 👥 직원 초대 및 역할 기반 접근 제어 (Supabase RLS)
-- 📊 예약 → 장부 자동 반영
-- 🧾 부서(거래처) 단위 정산 구조 + 히스토리 관리
-- 🤖 AI Helper (LLM 기반)
-자연어 입력 → 예약 의도 파싱 → 미리보기 → 확인 → 안전하게 반영  
-(OpenAI API 기반 입력 파이프라인)
-- 🗄 Supabase(PostgreSQL) 기반 백엔드 구조 및 RLS 정책 직접 설계
-
-특히, **사용자인 어머니가 헷갈리지 않도록**  
-입력 단계를 단순화하고, 실수 방지 구조에 집중했습니다.
-
-🔗 Live: https://nescafe-admin-pwa.vercel.app/
+<p align="center">
+  <a href="https://han-portfolio-six.vercel.app/">
+    <img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge&logo=vercel&logoColor=white" />
+  </a>
+  <a href="https://momecheck.vercel.app/">
+    <img src="https://img.shields.io/badge/MomeCheck-0F172A?style=for-the-badge&logo=googlefit&logoColor=white" />
+  </a>
+  <a href="https://velog.io/@creyon0215">
+    <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white" />
+  </a>
+  <a href="mailto:ljhan0215@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" />
+  </a>
+</p>
 
 ---
 
-## ✍️ Writing (회고 기록: Retrospective)
+## About Me
 
-Cafe Ledger를 개발하면서 겪은  
-운영 이슈, RLS 정책 충돌, 예외처리 설계 등을 정리하고 있습니다.
+- **Next.js · React · TypeScript** 기반으로 서비스를 설계하고 개발합니다.
+- **모바일 퍼스트 UX**, **인증/권한 구조**, **실수 방지형 입력 플로우**, **운영 가능한 데이터 구조 설계**에 강점이 있습니다.
+- 단순히 기능을 붙이는 것보다, **실제 사용 환경에서 오래 굴러가는 구조**를 만드는 데 집중합니다.
+- 기획부터 화면 설계, 데이터 흐름, 예외 처리까지 연결해서 보는 편입니다.
 
-About architecture decisions and real-world constraints.
-
-🔗 Series:  
-https://velog.io/@creyon0215/series/CafeLedger
-
----
-
-## 🏛 Public Policy Finder — Personalization (In Progress)
-
-사용자의 조건에 맞는 정부 지원 정책을 **탐색·필터링·우선순위화**하여  
-“받을 수 있는데 놓치고 있는 혜택”을 발견하도록 돕는 웹 애플리케이션입니다.
-
-A personalized public policy discovery app that helps users identify  
-benefits they are eligible for but may be missing.
+> “기능을 만드는 개발자”보다  
+> “실제 운영 가능한 구조를 설계하는 개발자”를 지향합니다.
 
 ---
 
-#### 🎯 Problem
+## Main Projects
 
-- 정부 정책 정보가 여러 곳에 흩어져 있어 접근성이 낮음
-- 정책마다 조건이 복잡해 실제 신청 가능 여부 판단이 어려움
-- 단순 리스트 형태 제공으로 사용자에게 의미 있는 선택이 어려움
+### 1) MomeCheck
+목표 몸 상태까지의 변화를 가볍게 계산해보는 **모바일 중심 웹 서비스**입니다.  
+사용자가 복잡한 정보 입력 없이 빠르게 결과를 확인하고, 흥미를 느낄 수 있는 구조에 집중했습니다.
 
----
+**Focus**
+- 빠른 진입과 낮은 입력 피로도
+- 모바일 퍼스트 UI
+- 결과 중심 플로우 설계
+- 서비스형 랜딩/전환 구조 고민
 
-#### 💡 Solution
-
-- 👤 **개인화 입력 기반 필터링**
-  - 나이 / 성별 /지역 / 소득 / 가구 형태 기반 정책 필터링
-
-- 📊 **정책 우선순위 정렬 로직**
-  - 단순 금액 기준이 아닌  
-  - **신청 가능성 × 혜택 크기 기반 스코어링**
-
-- ⚖️ **현실 반영 추천 로직**
-  - 조건이 까다로운 정책 → 우선순위 낮춤
-  - 신청 난이도 및 접근성 고려
-
-- 🧠 **확장 가능한 구조**
-  - 공공 API 기반 정책 데이터 연동
-  - 향후 AI 기반 eligibility 판단 및 추천 고도화
-
-- 🧾 **가구 유형 모델링**
-  - 1인 가구 / 다인가구
-  - 캥거루족 등 현실적인 생활 구조 반영
+🔗 https://momecheck.vercel.app/
 
 ---
 
-#### 🏗 Design
+### 2) 헬린이맵 (Gymkidzone)
+운동시설 데이터를 지도 기반으로 탐색하고,  
+리뷰/가격/특성 데이터를 바탕으로 **초보자 친화적인 운동시설을 찾기 쉽게 만드는 서비스**입니다.
 
-- 로그인 없이 사용 가능한 lightweight 구조
-- 로컬스토리지 기반 사용자 상태 관리
-- 모바일 퍼스트 UX + 카드형 추천 UI
-- 추천 이유를 설명할 수 있는 구조 (Explainable Recommendation)
+**Focus**
+- 지도 viewport 기반 데이터 조회 구조
+- 시설 상세 lazy fetch 설계
+- 리뷰/가격 기반 배지 및 점수화 구조
+- “헬린이 친화 / 가성비 / 내향인 친화” 같은 탐색 기준 설계
 
----
+🔗 https://gymkidzone.vercel.app/
 
-#### 🚀 Direction
-
-단순 정책 정보 제공이 아니라  
-👉 **“받을 수 있는데 놓치고 있는 혜택을 찾아주는 탐색 엔진”** 을 목표로 합니다.
-
-🔗 Live:  
-https://findmymoney.vercel.app/
+**Tech**
+Next.js · TypeScript · Map API · DB 설계 · 데이터 정규화
 
 ---
 
-## 🥗 나만의 영양코치 — AI
-Nutrition Coach (Cross-Platform)
+### 3) Cafe Ledger (PWA)
+가족이 운영하는 업체에서 **실제로 사용 중인 내부 운영 툴**입니다.  
+예치금, 미수금, 예약, 거래처 정산을 모바일에서 쉽게 처리할 수 있도록 설계했습니다.
 
-GPT-4o Vision + Supabase Edge Functions 기반의 AI 영양 관리 앱입니다.
-iOS / Android / Web(PWA) 단일 코드베이스로 동시 지원합니다.
+**Focus**
+- 모바일 퍼스트 운영 UX
+- 예약 → 장부 자동 반영
+- 직원 초대 및 역할 기반 접근 제어
+- Supabase RLS 기반 권한 구조
+- 자연어 입력 → 미리보기 → 확인 반영 방식의 AI Helper
 
-A cross-platform AI nutrition tracking app — iOS, Android, and Web from one codebase.
+**Tech**
+Next.js · TypeScript · Supabase · PostgreSQL · RLS · OpenAI API · PWA
 
-#### 핵심 설계 포인트
-
-- 📸 AI 음식 인식 — 사진 촬영 시 GPT-4o Vision이 음식·중량·칼로리·매크로 자동 분석
-- ✍️  텍스트 AI 로깅 — 자연어 입력 → GPT-4o-mini가 구조화된 영양 데이터로 파싱
-- 🧮 개인 목표 계산 엔진 — BMR(Mifflin-St Jeor / Katch-McArdle) · TDEE · 목표별 매크로 자동 설정
-- 🤖 AI 영양 코치 채팅 — 오늘 식단 + 프로필을 컨텍스트로 주입한 개인화 코칭
-- 📊 주간 통계 & 12주 체중 예측 모델
-- 🔐 보안 설계 — OpenAI 키를 Edge Function 서버 시크릿으로 격리, 클라이언트 미노출 사용자당 AI 호출 10회 제한 (`api_usage` 테이블 + HTTP 429)
-- 🌐 플랫폼 분기 번들링 — `FoodCamera.native.tsx` / `FoodCamera.tsx` 분리로 `expo-camera`를 웹 번들에서 완전히 제외
-
-🔗 Live (DEMO):
-[https://nutrition-coach-han.vercel.app/)
+🔗 https://nescafe-admin-pwa.vercel.app/
 
 ---
 
-## ⚽ FcSquadMeter — Deployed
+## Other Projects
 
-NEXON Open API 기반 계정/매치 데이터 비교 웹앱입니다.
+### Public Policy Finder
+개인 조건에 맞는 정부 지원 정책을 필터링하고 우선순위화하는 웹 앱  
+🔗 https://findmymoney.vercel.app/
 
-A deployed web app built on NEXON Open API.
+### Nutrition Coach
+GPT-4o Vision 기반 음식 인식 및 영양 기록/코칭 앱
 
-- 데이터 정규화 및 가공
-- 비교 중심 UI 설계
-- 통계 정보의 가독성 개선
-
+### FcSquadMeter
+NEXON Open API 기반 계정/매치 비교 웹앱  
 🔗 https://fcsquadmeter.vercel.app/
 
----
-
-## 🚀 Portfolio
-
-현재 작업 및 프로젝트를 정리한 포트폴리오입니다.
-
-include:
-- Cafe Ledger 아키텍처 상세 분석
-- AI 입력 파이프라인 설계 과정
-- 권한 모델 및 RLS 구조
-- 실제 운영 기반 문제 해결 사례
-
-🔗 https://han-portfolio-six.vercel.app/
+### Holidays
+라이프스타일·커머스 성격의 팀 PWA 프로젝트  
+인증, 결제, PWA 설정 중심으로 기여
 
 ---
 
-## 🧩 Other Project
+## Writing
 
-### ✈ Holidays (Team Project, 2023 / Legacy)
+실제 서비스 개발 과정에서 겪은 문제와 해결 과정을 기록하고 있습니다.
 
-라이프스타일·커머스 성격의 PWA 팀 프로젝트입니다.
+- Cafe Ledger 운영 이슈
+- Supabase RLS 정책 설계
+- 예외 처리와 데이터 흐름 구조
+- 실제 사용 환경에서의 UX 개선
 
-My Ownership:
-- Login/Auth 시스템 전체 설계 및 구현
-- Payment 시스템 설계 및 연동
-- 메인/로그인/매거진/결제 유도 플로우 개발
-- PWA 설정 단독 진행
-- Google Play 배포 → 심사(인증) 대기 단계까지 진행
-
-현재 서비스는 만료되었으며,  
-포트폴리오에서 GIF/이미지 기반으로 핵심 플로우를 정리했습니다.
+🔗 https://velog.io/@creyon0215/series/CafeLedger
 
 ---
 
-## 🧠 Tech Stack
+## Tech Stack
 
 ### Main
-- Next.js
-- React
-- TypeScript
+![Next.js](https://img.shields.io/badge/Next.js-111111?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-111111?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-111111?style=flat-square&logo=typescript&logoColor=3178C6)
 
 ### Supporting
-- Supabase (PostgreSQL / Auth / RLS)
-- React Query
-- Zustand
-- Tailwind CSS
-- OpenAI API (LLM)
-- PWA
-- Vercel
+![Supabase](https://img.shields.io/badge/Supabase-111111?style=flat-square&logo=supabase&logoColor=3ECF8E)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-111111?style=flat-square&logo=postgresql&logoColor=4169E1)
+![React Query](https://img.shields.io/badge/React_Query-111111?style=flat-square&logo=reactquery&logoColor=FF4154)
+![Zustand](https://img.shields.io/badge/Zustand-111111?style=flat-square)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-111111?style=flat-square&logo=tailwindcss&logoColor=06B6D4)
+![OpenAI](https://img.shields.io/badge/OpenAI_API-111111?style=flat-square&logo=openai&logoColor=white)
+![PWA](https://img.shields.io/badge/PWA-111111?style=flat-square)
+![Vercel](https://img.shields.io/badge/Vercel-111111?style=flat-square&logo=vercel&logoColor=white)
 
 ---
 
-## 📬 Contact
+## Contact
 
-- Email: ljhan0215@gmail.com
-- GitHub: lbj23han
-- Velog: https://velog.io/@creyon0215
+- Email: **ljhan0215@gmail.com**
+- GitHub: **lbj23han**
+- Portfolio: **https://han-portfolio-six.vercel.app/**
+- Velog: **https://velog.io/@creyon0215**
 
 ---
 
-> “매일 조금씩, 꾸준히 앞으로.”
+<p align="center">
+  매일 조금씩, 꾸준히 앞으로.
+</p>
