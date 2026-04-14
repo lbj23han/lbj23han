@@ -98,7 +98,7 @@ Next.js · React · TypeScript · Supabase · PostgreSQL · RLS · OpenAI API ·
 - 리뷰/가격 기반 배지 및 점수화 구조
 - “헬린이 친화 / 가성비 / 내향인 친화” 같은 탐색 기준 설계
 
-🔗 https://gymkidzone.vercel.app/
+🔗 https://헬린이맵.com
 
 #### 몸매체크 (MomeCheck)
 목표 몸 상태까지의 변화를 가볍게 계산해보는 **모바일 중심 웹 서비스**입니다.  
