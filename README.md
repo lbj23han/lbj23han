@@ -1,7 +1,7 @@
 <h1 align="center">Han's GitHub</h1>
 
 <p align="center">
-  웹 애플리케이션과 자동화 시스템으로 실제 운영 문제를 해결하는 사람
+  웹 애플리케이션과 자동화 시스템으로 실제 운영 문제를 해결합니다.
 </p>
 
 <p align="center">
